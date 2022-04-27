@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: dimgray;
+}
+
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 10% auto 10%;
+  grid-template-areas: 
+    "header header"
+    "sidenav content"
+    "footer footer";
+}
+
+ #content, #sidenav, #footer  {
+  border: 1px solid rgb(255, 255, 255);
+  
+  
+}
+#header {
+  grid-area: header;
+  margin: auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 25px;
+}
+#content {
+  grid-area: content;
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer {
+  grid-area: footer;
+  margin: auto;
+  font-size: 30px;
+  border: 1px solid black;
+}
+#sidenav {
+  grid-area: sidenav;
+  padding: 10px;
+}
+
+.block {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+}
+#rodape {
+ border: 1px solid blue;
+}
+
+#botao {
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  }
+  
+ 
